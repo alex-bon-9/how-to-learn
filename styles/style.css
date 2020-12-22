@@ -10,7 +10,7 @@
 }
 
 .header {
-  height: 100vh; /*без этого значения квадрат уезжает вниз*/
+  height: 100vh;
   min-height: 600px;
   max-height: 756px;
   display: flex;
@@ -22,11 +22,11 @@
   /* выше установили ограничения для секции */
 }
 .logo {
-}
-/*по брифу отступы для блока задаются в модификаторе, тогда какие стили задаются в logo? */
-.logo_place_header {
   width: 183px;
   height: 32px;
+}
+/*по брифу отступы для блока задаются в модификаторе, в logo задаются ширина и высота*/
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -89,7 +89,6 @@
   color: #000000;
   position: relative;
 }
-/*"Используйте min-height с осторожностью", но значения нет?!*/
 .two-columns {
   width: 80%;
   display: flex;
@@ -111,17 +110,12 @@
 }
 .two-columns__paragraph {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.two-columns__paragraph:first-of-type {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
 .two-columns__paragraph:last-of-type {
-  margin-top: 30px;
   margin-bottom: 0;
 }
 .two-columns__span-accent {
@@ -140,50 +134,39 @@
   position: relative;
 }
 .section-title {
-  /*width: 60%;*/
+  margin: 0; /*если модификатор не нужен как сбросить margin?! (если сбрасывать у блоков не по БЭМ или в виде исключения можно)*/
+  width: 60%;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
-.section-title_type_title {
-  margin: 0;
-  width: 60%;
-}
 .section-subtitle {
   /*width: 60%;*/
   /*padding-top: 20px;*/
+  margin: 20px 0 0 0;
+  width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.section-subtitle_type_subtitle {
-  /*margin: 0;*/
-  margin: 20px 0 0 0;
-  width: 60%;
-}
 .table {
-  /*width: 1100px;*/
-  padding-top: 60px;
-  padding-bottom: 0;
+  width: 1100px;
+  margin: 0; /*для блока не рекомендуется, но т.к. свои элементы и модификаторы добавлять нельзя, исключение */
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.table_type_table {
-  width: 1100px;
-}
 .table__cell {
-  margin: 0;
+  list-style: none;
+  margin-top: 60px;
   width: 250px;
 }
 .table__cell:nth-of-type(4n) {
   margin-right: 0;
-}
-.table__cell:nth-child(-n+4) { /*отступы снизу для первых 4-х ячеек, получилось сделать так, мы не проходили, но честно нагуглил*/
-  margin-bottom: 60px;
 }
 .table__heading {
   margin: 0;
@@ -199,7 +182,7 @@
 }
 
 .feynman {
-  height: 790px;
+  min-height: 790px;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -271,7 +254,6 @@
 }
 .table_theme_dark {
   margin: 0 auto;
-  padding-top: 80px;
   width: 1100px;
   position: relative;
   z-index: 3;
@@ -279,11 +261,11 @@
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-}
-.table__cell_theme_dark:nth-child(-n+5) {
-  margin-bottom: 80px;
+  margin-top: 80px;
 }
 .kaufman__triangle {
+  background: url('../images/kaufman-triangle.svg') no-repeat;
+  background-size: cover;
   width: 877px;
 	height: 877px;
   position: absolute;
@@ -293,6 +275,7 @@
 }
 
 .footer {
+  box-sizing: border-box;
   min-height: 350px;
   display: flex;
   flex-direction: row;
@@ -343,10 +326,6 @@
   font-weight: normal;
   list-style: none;
 }
-.footer__column-link_type_link {
-  text-decoration: none;
-  color: #ffffff;
-}
 .footer__column-link {
   margin-top: 0;
   margin-bottom: 0px;
@@ -355,9 +334,12 @@
   font-size: 18px;
   font-weight: normal;
   list-style: none;
+  text-decoration: none;
+  color: #ffffff;
 }
 .footer__social-icon {
-  margin: 0;
+  margin: 0 10px 0 0;
   width: 16px;
   height: 16px;
+  overflow: hidden;
 }
