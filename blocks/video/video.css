@@ -5,5 +5,4 @@
   padding-top: 100px;
   min-height: 430px; /*без заданой высоты, блок рушится, видео вылезает за границы*/
   position: relative;
-  border: none;
 }
