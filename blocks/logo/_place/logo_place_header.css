@@ -1,0 +1,7 @@
+/*по брифу отступы для блока задаются в модификаторе, в logo задаются ширина и высота*/
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 6;
+}

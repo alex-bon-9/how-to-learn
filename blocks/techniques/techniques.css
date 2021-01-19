@@ -1,0 +1,9 @@
+.techniques {
+  margin: 0;
+  /*width: 80%; - после того как задаешь ширину, блок не центруется, не смог победить, кроме как если добавить margin: 0 auto, так можно решить?!*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}

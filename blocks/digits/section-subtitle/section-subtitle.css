@@ -1,0 +1,11 @@
+.section-subtitle {
+  /*width: 60%;*/
+  /*padding-top: 20px;*/
+  /*display: flex; заметка#2 возможно сюда нужно добавить св-во чтобы ширина текста была по содежимому, к вопросу про ширину 80%?!*/
+  margin: 20px 0 0 0;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}

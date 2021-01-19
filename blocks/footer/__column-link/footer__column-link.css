@@ -1,0 +1,25 @@
+.footer__column-link {
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-left: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  transition: .5s linear;
+}
+.footer__column-link:hover { /*ссылки при наведении становится плавно прозрачной*/
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-left: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: .5;
+  transition: .5s linear;
+}

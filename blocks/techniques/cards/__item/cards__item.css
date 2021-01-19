@@ -1,0 +1,13 @@
+.cards__item {
+  margin-right: 100px;
+  width: 240px; /*подобрал ширину через инструменты разработчика, чтобы текст ложился как в брифе*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  box-sizing: border-box; /*нужно ли здесь это св-во*/
+}
+.cards__item:nth-of-type(3n) {
+  margin-right: 0px;
+}
