@@ -1,0 +1,13 @@
+.video__iframes {
+  /*max-height: 316px; добавил - дублированное значение чтобы контент был в заданных границах, т.к. из за эл-та li появляется +4px*/
+  /*max-width: 1050px; добавил значение чтобы контент был в заданных границах*/
+  margin: 50px 0 -53px 0; /*задан отступ для блока, по БЭМ задается модификатором -для наложения видео*/
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  z-index: 2;/*так видео поверх*/
+  /*box-sizing: border-box; удалить*/
+  /*transform: translate(0, 20%); св-во также может сдвинуть блок*/
+}

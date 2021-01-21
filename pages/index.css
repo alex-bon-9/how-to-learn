@@ -24,8 +24,8 @@
 @import url('../blocks/cards/__title/cards__title.css');
 @import url('../blocks/cards/__description/cards__description.css');
 @import url('../blocks/video/video.css'); /*блок видео*/
-@import url('../blocks/iframes/iframes.css');
-@import url('../blocks/iframe/iframe.css');
+@import url('../blocks/video/__iframes/video__iframes.css');
+@import url('../blocks/video/__iframe/video__iframe.css');
 @import url('../blocks/oakley/oakley.css'); /*блок оакли*/
 @import url('../blocks/feynman/feynman.css'); /*блок фейнман*/
 @import url('../blocks/feynman/__title/feynman__title.css');
@@ -54,6 +54,8 @@
 @import url('../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css');
 @import url('../blocks/table/_theme/table_theme_dark.css');
 @import url('../blocks/table/__cell/_theme/table__cell_theme_dark.css');
+@import url('../blocks/table/__heading/_theme/table__heading_theme_dark.css');
+@import url('../blocks/table/__text/_theme/table__text_theme_dark.css');
 @import url('../blocks/kaufman/__triangle/kaufman__triangle.css');
 @import url('../blocks/resources/resources.css'); /*блок ресурсы*/
 @import url('../blocks/resources/__logo-zone/resources__logo-zone.css');
@@ -68,11 +70,3 @@
 @import url('../blocks/footer/__column-links/footer__column-links.css');
 @import url('../blocks/footer/__column-link/footer__column-link.css');
 @import url('../blocks/footer/__social-icon/footer__social-icon.css');
-@keyframes rotation { /*кейфрэйм для анимации, если писать до импорта стили не работают?!*/
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}

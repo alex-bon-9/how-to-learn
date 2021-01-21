@@ -1,3 +1,11 @@
 .rotation {
   animation: rotation 20s linear infinite; /*анимация поворота элемента на 360 градусов. Имя анимации совпадает с именем блока, все работает, но VScode подсвечивает имя белым, как ошибоное, если меняем имя анимации на move, то VSCode подсвечивает имя корректно?!*/
 }
+@keyframes rotation { /*кейфрэйм для анимации, перенесли в rotation*/
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

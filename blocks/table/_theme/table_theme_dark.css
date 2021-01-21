@@ -1,6 +1,6 @@
 .table_theme_dark {
-  margin: 0 auto;
-  width: 1100px;
+  /*margin: 0 auto; - дублируется*/
+  /*width: 1100px;- дублируется*/
   position: relative;
   z-index: 2;
 }

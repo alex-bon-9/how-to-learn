@@ -1,6 +1,7 @@
 .section-title_theme_dark {
-  margin: 0 auto;
-  width: 60%;
+  /*margin: 0 auto; - св-ва дублируются, посмотрел через Chrome DevTools*/
+  /*width: 60%;*/
   position: relative;
   z-index: 4;
+  color: #ffffff;
 }

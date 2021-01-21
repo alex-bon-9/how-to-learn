@@ -4,8 +4,5 @@
   transition: .5s linear;
 }
 .header__link:hover { /*ссылка плавно становится немного прозрачной*/
-  text-decoration: none;
-  color: #2f80ed;
   opacity: .5;
-  transition: .5s linear;
 }

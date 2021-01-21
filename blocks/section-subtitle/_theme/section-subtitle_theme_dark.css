@@ -1,6 +1,7 @@
 .section-subtitle_theme_dark {
-  margin: 20px auto 0 auto;
-  width: 60%;
+  /*margin: 20px auto 0 auto; - удалил дублирующиеся*/
+  /*width: 60%; - удалил дублирующиеся*/
   position: relative;
   z-index: 3;
+  color: #ffffff;
 }

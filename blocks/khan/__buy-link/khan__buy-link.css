@@ -1,5 +1,7 @@
 .khan__buy-link {
   margin-left: 48px;
+  display: flex;
+  align-self: flex-start; /*прижал ссылку к верху*/
   text-decoration: none;
   color: #2f80ed;
   line-height: 42px;
@@ -8,12 +10,5 @@
   transition: .5s linear;
 }
 .khan__buy-link:hover { /*ссылка при наведении становится плавно прозрачной*/
-  margin-left: 48px;
-  text-decoration: none;
-  color: #2f80ed;
-  line-height: 42px;
-  font-size: 30px;
-  font-weight: normal;
   opacity: .5;
-  transition: .5s linear;
 }
