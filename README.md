@@ -14,3 +14,5 @@ _Пользователи познакомятся с методиками, по
 * _на страницу добавлена анимаця_
 
 [Перейти в портфолио github.com](https://github.com/alex-bon-9?tab=repositories "Посмотреть другие проекты разработчика на сайте github.com")
+
+[Ссылка на сайт](https://alex-bon-9.github.io/how-to-learn/index.html)
